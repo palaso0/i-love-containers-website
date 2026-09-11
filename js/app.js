@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeroTabs();
   initDocsNav();
   initCodeCopy();
+  initLightbox();
 });
 
 function initTheme() {
@@ -123,5 +124,37 @@ function initCodeCopy() {
         }, 2000);
       });
     });
+  });
+}
+
+function initLightbox() {
+  const overlay = document.getElementById("lightbox");
+  const lightboxImg = overlay.querySelector(".lightbox-img");
+  const title = overlay.querySelector(".lightbox-title");
+  const desc = overlay.querySelector(".lightbox-desc");
+  const closeBtn = overlay.querySelector(".lightbox-close");
+
+  document.querySelectorAll(".card-item").forEach((card) => {
+    card.addEventListener("click", () => {
+      const img = card.querySelector(".card-thumb");
+      const cardTitle = card.querySelector("h3");
+      const cardDesc = card.querySelector(".card-content p");
+      if (img) {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        title.textContent = cardTitle ? cardTitle.textContent : "";
+        desc.textContent = cardDesc ? cardDesc.textContent : "";
+        overlay.classList.add("active");
+      }
+    });
+  });
+
+  closeBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    overlay.classList.remove("active");
+  });
+
+  overlay.addEventListener("click", () => {
+    overlay.classList.remove("active");
   });
 }

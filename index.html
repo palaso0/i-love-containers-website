@@ -398,7 +398,8 @@
         <div class="docs-frame">
           <aside class="docs-sidebar">
             <ul class="docs-nav-list">
-              <li><button class="docs-link-btn active" data-doc-target="pane-engines" data-i18n="docs.nav.engines">Engine Detection</button></li>
+              <li><button class="docs-link-btn active" data-doc-target="pane-install" data-i18n="docs.nav.install">Installation</button></li>
+              <li><button class="docs-link-btn" data-doc-target="pane-engines" data-i18n="docs.nav.engines">Engine Detection</button></li>
               <li><button class="docs-link-btn" data-doc-target="pane-files" data-i18n="docs.nav.files">File Operations</button></li>
               <li><button class="docs-link-btn" data-doc-target="pane-multiwin" data-i18n="docs.nav.multiwin">Multi-Window</button></li>
               <li><button class="docs-link-btn" data-doc-target="pane-shortcuts" data-i18n="docs.nav.shortcuts">Shortcuts</button></li>
@@ -406,7 +407,36 @@
           </aside>
 
           <div class="docs-panel-content">
-            <div id="pane-engines" class="doc-pane active">
+            <div id="pane-install" class="doc-pane active">
+              <h2 data-i18n="docs.pane1.title">Installation</h2>
+              <p data-i18n="docs.pane1.p1">
+                Three steps to get ILC running on your Mac.
+              </p>
+
+              <div class="code-box">
+                <div class="code-box-head">
+                  <span class="mono">Step 1</span>
+                </div>
+                <p data-i18n="docs.pane1.step1">Download the .dmg file from the button above and save it to your Downloads folder.</p>
+              </div>
+
+              <div class="code-box">
+                <div class="code-box-head">
+                  <span class="mono">Step 2</span>
+                </div>
+                <p data-i18n="docs.pane1.step2">Open the .dmg file and drag "I Love Containers" into your Applications folder.</p>
+              </div>
+
+              <div class="code-box">
+                <div class="code-box-head">
+                  <span class="mono">Step 3 — Allow Gatekeeper</span>
+                </div>
+                <p data-i18n="docs.pane1.step3">macOS may block the app because it's not signed with an Apple Developer ID. Run this command in Terminal to allow it:</p>
+                <pre class="mono"><code>xattr -cr "/Applications/I Love Containers.app"</code></pre>
+              </div>
+            </div>
+
+            <div id="pane-engines" class="doc-pane">
               <h2 data-i18n="docs.pane2.title">Engine Detection</h2>
               <p data-i18n="docs.pane2.p1">
                 ILC inspects standard macOS socket paths and presents available engines in the sidebar and Command Palette (⌘K).
@@ -468,6 +498,10 @@ Podman:          ~/.local/share/containers/podman/machine/qemu/podman.sock</code
                     <td data-i18n="docs.sc.b">Toggle Sidebar</td>
                   </tr>
                   <tr>
+                    <td><kbd class="sc-chip mono">O</kbd></td>
+                    <td data-i18n="docs.sc.o">Open Overview</td>
+                  </tr>
+                  <tr>
                     <td><kbd class="sc-chip mono">R</kbd></td>
                     <td data-i18n="docs.sc.r">Refresh Resources</td>
                   </tr>
@@ -478,6 +512,10 @@ Podman:          ~/.local/share/containers/podman/machine/qemu/podman.sock</code
                   <tr>
                     <td><kbd class="sc-chip mono">T</kbd></td>
                     <td data-i18n="docs.sc.t">Open Shell in Selected Container</td>
+                  </tr>
+                  <tr>
+                    <td><kbd class="sc-chip mono">F</kbd></td>
+                    <td data-i18n="docs.sc.f">Open Files in Selected Container</td>
                   </tr>
                   <tr>
                     <td><kbd class="sc-chip mono">L</kbd></td>
@@ -519,6 +557,17 @@ Podman:          ~/.local/share/containers/podman/machine/qemu/podman.sock</code
       </div>
     </section>
   </main>
+
+  <div id="lightbox" class="lightbox-overlay">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-body">
+      <img class="lightbox-img" src="" alt="">
+      <div class="lightbox-info">
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="container">
