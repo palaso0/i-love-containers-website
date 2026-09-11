@@ -58,7 +58,7 @@
         <div class="hero-body">
           <div class="version-chip">
             <span class="status-dot"></span>
-            <span data-i18n="hero.badge">v0.1.0 Beta · Built for macOS</span>
+            <span data-i18n="hero.badge">v0.1.0 · Built for macOS</span>
           </div>
 
           <h1 class="hero-heading" data-i18n="hero.title">
@@ -221,12 +221,7 @@
                 Only 11.3 MB installed. Starts cold in under 200 milliseconds and runs in ~35 MB of idle RAM.
               </p>
             </div>
-            <div class="code-terminal-card mono">
-              <div class="c-muted">// Benchmark on Apple M3</div>
-              <div><span class="c-blue">ilc --daemon-ping</span> <span class="c-green">→ 0.42ms (socket)</span></div>
-              <div><span class="c-blue">ilc --memory-footprint</span> <span class="c-green">→ 32.8 MB RSS</span></div>
-              <div><span class="c-blue">ilc --startup-time</span> <span class="c-green">→ 184ms</span></div>
-            </div>
+
           </div>
 
           <div class="feature-panel">
@@ -239,8 +234,10 @@
             <div class="shortcut-chips mono">
               <span class="sc-chip">⌘K Search</span>
               <span class="sc-chip">⌘B Sidebar</span>
+              <span class="sc-chip">O Overview</span>
               <span class="sc-chip">M View</span>
               <span class="sc-chip">T Shell</span>
+              <span class="sc-chip">F Files</span>
               <span class="sc-chip">L Logs</span>
               <span class="sc-chip">S Stats</span>
               <span class="sc-chip">R Refresh</span>
@@ -273,8 +270,8 @@
               <tr>
                 <td data-i18n="comp.row.size">Install Size</td>
                 <td class="cell-featured cell-winner mono" data-i18n="comp.row.memory.ilc">11.3 MB</td>
-                <td class="mono" data-i18n="comp.row.memory.docker">450 MB – 1.2 GB (Electron)</td>
-                <td class="mono" data-i18n="comp.row.memory.podman">320 MB – 650 MB (Electron)</td>
+                <td class="mono" data-i18n="comp.row.memory.docker">450 MB – 1.2 GB</td>
+                <td class="mono" data-i18n="comp.row.memory.podman">320 MB – 650 MB</td>
               </tr>
               <tr>
                 <td data-i18n="comp.row.engines">Multi-Engine Support</td>
@@ -299,6 +296,36 @@
                 <td class="cell-featured cell-winner mono" data-i18n="comp.row.startup.ilc">&lt; 200 ms</td>
                 <td class="mono" data-i18n="comp.row.startup.docker">8 – 20 seconds</td>
                 <td class="mono" data-i18n="comp.row.startup.podman">4 – 10 seconds</td>
+              </tr>
+              <tr>
+                <td data-i18n="comp.row.ram">Idle RAM Usage</td>
+                <td class="cell-featured cell-winner mono" data-i18n="comp.row.ram.ilc">~35 MB</td>
+                <td class="mono" data-i18n="comp.row.ram.docker">450 MB – 1.2 GB</td>
+                <td class="mono" data-i18n="comp.row.ram.podman">320 MB – 650 MB</td>
+              </tr>
+              <tr>
+                <td data-i18n="comp.row.engines_count">Engines Supported</td>
+                <td class="cell-featured cell-winner" data-i18n="comp.row.engines_count.ilc">5 (Docker, OrbStack, Colima, Podman, Rancher)</td>
+                <td data-i18n="comp.row.engines_count.docker">1</td>
+                <td data-i18n="comp.row.engines_count.podman">2 (Podman + partial Docker)</td>
+              </tr>
+              <tr>
+                <td data-i18n="comp.row.palette">Command Palette</td>
+                <td class="cell-featured cell-winner" data-i18n="comp.row.palette.ilc">⌘K global shortcuts</td>
+                <td data-i18n="comp.row.palette.docker">Not available</td>
+                <td data-i18n="comp.row.palette.podman">Not available</td>
+              </tr>
+              <tr>
+                <td data-i18n="comp.row.opensource">Open Source</td>
+                <td class="cell-featured cell-winner" data-i18n="comp.row.opensource.ilc">Yes (MIT License)</td>
+                <td data-i18n="comp.row.opensource.docker">No (Proprietary)</td>
+                <td data-i18n="comp.row.opensource.podman">Yes (Apache 2.0)</td>
+              </tr>
+              <tr>
+                <td data-i18n="comp.row.metrics">Live Resource Metrics</td>
+                <td class="cell-featured cell-winner" data-i18n="comp.row.metrics.ilc">CPU, Memory, Disk I/O, Network</td>
+                <td data-i18n="comp.row.metrics.docker">Basic container stats</td>
+                <td data-i18n="comp.row.metrics.podman">Basic container stats</td>
               </tr>
             </tbody>
           </table>

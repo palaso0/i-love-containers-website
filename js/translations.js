@@ -7,7 +7,7 @@ const translations = {
     "nav.docs": "Documentation",
     "nav.download": "Download",
     
-    "hero.badge": "v0.1.0 Beta · Built for macOS",
+    "hero.badge": "v0.1.0 · Built for macOS",
     "hero.title": "The fast, lightweight container manager for macOS",
     "hero.subtitle": "One unified client for Docker Desktop, OrbStack, Colima, Rancher, and Podman. Instant engine switching, native multi-window workflows, and in-container file editing.",
     "hero.cta_download": "Download for Mac",
@@ -56,8 +56,8 @@ const translations = {
     
     "comp.row.size": "Install Size",
     "comp.row.memory.ilc": "11.3 MB",
-    "comp.row.memory.docker": "450 MB – 1.2 GB (Electron)",
-    "comp.row.memory.podman": "320 MB – 650 MB (Electron)",
+    "comp.row.memory.docker": "450 MB – 1.2 GB",
+    "comp.row.memory.podman": "320 MB – 650 MB",
     
     "comp.row.engines": "Multi-Engine Support",
     "comp.row.engines.ilc": "Docker, OrbStack, Colima, Podman, Rancher",
@@ -78,6 +78,31 @@ const translations = {
     "comp.row.startup.ilc": "< 200 ms",
     "comp.row.startup.docker": "8 – 20 seconds",
     "comp.row.startup.podman": "4 – 10 seconds",
+
+    "comp.row.ram": "Idle RAM Usage",
+    "comp.row.ram.ilc": "~35 MB",
+    "comp.row.ram.docker": "450 MB – 1.2 GB",
+    "comp.row.ram.podman": "320 MB – 650 MB",
+
+    "comp.row.engines_count": "Engines Supported",
+    "comp.row.engines_count.ilc": "5 (Docker, OrbStack, Colima, Podman, Rancher)",
+    "comp.row.engines_count.docker": "1",
+    "comp.row.engines_count.podman": "2 (Podman + partial Docker)",
+
+    "comp.row.palette": "Command Palette",
+    "comp.row.palette.ilc": "⌘K global shortcuts",
+    "comp.row.palette.docker": "Not available",
+    "comp.row.palette.podman": "Not available",
+
+    "comp.row.opensource": "Open Source",
+    "comp.row.opensource.ilc": "Yes (MIT License)",
+    "comp.row.opensource.docker": "No (Proprietary)",
+    "comp.row.opensource.podman": "Yes (Apache 2.0)",
+
+    "comp.row.metrics": "Live Resource Metrics",
+    "comp.row.metrics.ilc": "CPU, Memory, Disk I/O, Network",
+    "comp.row.metrics.docker": "Basic container stats",
+    "comp.row.metrics.podman": "Basic container stats",
 
     "gallery.title": "Application Showcase",
     "gallery.subtitle": "Core views and management surfaces in the macOS desktop client.",
@@ -143,7 +168,7 @@ const translations = {
     "nav.docs": "Documentación",
     "nav.download": "Descargar",
     
-    "hero.badge": "v0.1.0 Beta · Creado para macOS",
+    "hero.badge": "v0.1.0 · Creado para macOS",
     "hero.title": "El gestor de contenedores rápido y ligero para macOS",
     "hero.subtitle": "Un único cliente para Docker Desktop, OrbStack, Colima, Rancher y Podman. Cambio de motor al instante, ventanas nativas desacoplables y edición de archivos dentro del contenedor.",
     "hero.cta_download": "Descargar para Mac",
@@ -192,8 +217,8 @@ const translations = {
     
     "comp.row.size": "Tamaño de Instalación",
     "comp.row.memory.ilc": "11.3 MB",
-    "comp.row.memory.docker": "450 MB – 1.2 GB (Electron)",
-    "comp.row.memory.podman": "320 MB – 650 MB (Electron)",
+    "comp.row.memory.docker": "450 MB – 1.2 GB",
+    "comp.row.memory.podman": "320 MB – 650 MB",
     
     "comp.row.engines": "Soporte Multi-Motor",
     "comp.row.engines.ilc": "Docker, OrbStack, Colima, Podman, Rancher",
@@ -214,6 +239,31 @@ const translations = {
     "comp.row.startup.ilc": "< 200 ms",
     "comp.row.startup.docker": "8 – 20 segundos",
     "comp.row.startup.podman": "4 – 10 segundos",
+
+    "comp.row.ram": "Uso de RAM en Reposo",
+    "comp.row.ram.ilc": "~35 MB",
+    "comp.row.ram.docker": "450 MB – 1.2 GB",
+    "comp.row.ram.podman": "320 MB – 650 MB",
+
+    "comp.row.engines_count": "Motores Soportados",
+    "comp.row.engines_count.ilc": "5 (Docker, OrbStack, Colima, Podman, Rancher)",
+    "comp.row.engines_count.docker": "1",
+    "comp.row.engines_count.podman": "2 (Podman + puente Docker parcial)",
+
+    "comp.row.palette": "Paleta de Comandos",
+    "comp.row.palette.ilc": "Atajos globales ⌘K",
+    "comp.row.palette.docker": "No disponible",
+    "comp.row.palette.podman": "No disponible",
+
+    "comp.row.opensource": "Código Abierto",
+    "comp.row.opensource.ilc": "Sí (Licencia MIT)",
+    "comp.row.opensource.docker": "No (Propietario)",
+    "comp.row.opensource.podman": "Sí (Apache 2.0)",
+
+    "comp.row.metrics": "Métricas de Recursos en Vivo",
+    "comp.row.metrics.ilc": "CPU, Memoria, Disco I/O, Red",
+    "comp.row.metrics.docker": "Estadísticas básicas del contenedor",
+    "comp.row.metrics.podman": "Estadísticas básicas del contenedor",
 
     "gallery.title": "Vistas de la Aplicación",
     "gallery.subtitle": "Paneles principales y controles de administración en macOS.",
